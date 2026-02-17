@@ -1,7 +1,4 @@
-# CPU Scheduling Simulator - Project 1
-## CSC 4210 - Operating Systems
-
-This project implements a CPU scheduling simulator that models four classic scheduling algorithms: FCFS, SRTF, Priority, and Round Robin.
+# CPU Scheduling Simulator
 
 ## Repository URL
 git@github.com:srochdi/Operating-Systems.git
