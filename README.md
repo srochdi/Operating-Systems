@@ -11,9 +11,10 @@ This project implements a CPU scheduling simulator that models four classic sche
 .
 ├── cpu_scheduler.cpp       # Main simulator implementation
 ├── README.md              # This file
-├── Makefile               # Build configuration
+├── makefile               # Build configuration
 ├── input.txt              # Sample input file
-└── manual_analysis.pdf    # Part A: Hand-drawn solutions
+|-- ai_usage.txt
+└── manual_analysis.pdf    # Part A solutions
 ```
 
 ## Building the Project
