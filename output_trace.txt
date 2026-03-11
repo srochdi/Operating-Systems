@@ -1,0 +1,449 @@
+========================================
+FCFS Scheduling
+========================================
+
+Time 0:
+
+RUNNING:
+PID=1  Arr=0  Burst=5  Rem=5  Prio=2  State=RUNNING
+
+Time 1:
+
+RUNNING:
+PID=1  Arr=0  Burst=5  Rem=4  Prio=2  State=RUNNING
+
+READY:
+PID=2  Arr=1  Burst=3  Rem=3  Prio=1  State=READY
+
+Time 2:
+
+RUNNING:
+PID=1  Arr=0  Burst=5  Rem=3  Prio=2  State=RUNNING
+
+READY:
+PID=2  Arr=1  Burst=3  Rem=3  Prio=1  State=READY
+
+Time 3:
+
+RUNNING:
+PID=1  Arr=0  Burst=5  Rem=2  Prio=2  State=RUNNING
+
+READY:
+PID=2  Arr=1  Burst=3  Rem=3  Prio=1  State=READY
+PID=3  Arr=3  Burst=2  Rem=2  Prio=2  State=READY
+PID=4  Arr=3  Burst=2  Rem=2  Prio=2  State=READY
+
+Time 4:
+
+RUNNING:
+PID=1  Arr=0  Burst=5  Rem=1  Prio=2  State=RUNNING
+
+READY:
+PID=2  Arr=1  Burst=3  Rem=3  Prio=1  State=READY
+PID=3  Arr=3  Burst=2  Rem=2  Prio=2  State=READY
+PID=4  Arr=3  Burst=2  Rem=2  Prio=2  State=READY
+
+Time 5:
+
+RUNNING:
+PID=2  Arr=1  Burst=3  Rem=3  Prio=1  State=RUNNING
+
+READY:
+PID=3  Arr=3  Burst=2  Rem=2  Prio=2  State=READY
+PID=4  Arr=3  Burst=2  Rem=2  Prio=2  State=READY
+
+Time 6:
+
+RUNNING:
+PID=2  Arr=1  Burst=3  Rem=2  Prio=1  State=RUNNING
+
+READY:
+PID=3  Arr=3  Burst=2  Rem=2  Prio=2  State=READY
+PID=4  Arr=3  Burst=2  Rem=2  Prio=2  State=READY
+
+Time 7:
+
+RUNNING:
+PID=2  Arr=1  Burst=3  Rem=1  Prio=1  State=RUNNING
+
+READY:
+PID=3  Arr=3  Burst=2  Rem=2  Prio=2  State=READY
+PID=4  Arr=3  Burst=2  Rem=2  Prio=2  State=READY
+
+Time 8:
+
+RUNNING:
+PID=3  Arr=3  Burst=2  Rem=2  Prio=2  State=RUNNING
+
+READY:
+PID=4  Arr=3  Burst=2  Rem=2  Prio=2  State=READY
+
+Time 9:
+
+RUNNING:
+PID=3  Arr=3  Burst=2  Rem=1  Prio=2  State=RUNNING
+
+READY:
+PID=4  Arr=3  Burst=2  Rem=2  Prio=2  State=READY
+
+Time 10:
+
+RUNNING:
+PID=4  Arr=3  Burst=2  Rem=2  Prio=2  State=RUNNING
+
+Time 11:
+
+RUNNING:
+PID=4  Arr=3  Burst=2  Rem=1  Prio=2  State=RUNNING
+
+
+========================================
+Performance Metrics
+========================================
+PID 1: Turnaround=5, Waiting=0, Response=0
+PID 2: Turnaround=7, Waiting=4, Response=4
+PID 3: Turnaround=7, Waiting=5, Response=5
+PID 4: Turnaround=9, Waiting=7, Response=7
+
+Average Turnaround Time: 7
+Average Waiting Time: 4
+Average Response Time: 4
+
+
+
+========================================
+SRTF Scheduling
+========================================
+
+Time 0:
+
+RUNNING:
+PID=1  Arr=0  Burst=5  Rem=5  Prio=2  State=RUNNING
+
+Time 1:
+
+RUNNING:
+PID=2  Arr=1  Burst=3  Rem=3  Prio=1  State=RUNNING
+
+READY:
+PID=1  Arr=0  Burst=5  Rem=4  Prio=2  State=READY
+
+Time 2:
+
+RUNNING:
+PID=2  Arr=1  Burst=3  Rem=2  Prio=1  State=RUNNING
+
+READY:
+PID=1  Arr=0  Burst=5  Rem=4  Prio=2  State=READY
+
+Time 3:
+
+RUNNING:
+PID=2  Arr=1  Burst=3  Rem=1  Prio=1  State=RUNNING
+
+READY:
+PID=3  Arr=3  Burst=2  Rem=2  Prio=2  State=READY
+PID=4  Arr=3  Burst=2  Rem=2  Prio=2  State=READY
+PID=1  Arr=0  Burst=5  Rem=4  Prio=2  State=READY
+
+Time 4:
+
+RUNNING:
+PID=3  Arr=3  Burst=2  Rem=2  Prio=2  State=RUNNING
+
+READY:
+PID=4  Arr=3  Burst=2  Rem=2  Prio=2  State=READY
+PID=1  Arr=0  Burst=5  Rem=4  Prio=2  State=READY
+
+Time 5:
+
+RUNNING:
+PID=3  Arr=3  Burst=2  Rem=1  Prio=2  State=RUNNING
+
+READY:
+PID=4  Arr=3  Burst=2  Rem=2  Prio=2  State=READY
+PID=1  Arr=0  Burst=5  Rem=4  Prio=2  State=READY
+
+Time 6:
+
+RUNNING:
+PID=4  Arr=3  Burst=2  Rem=2  Prio=2  State=RUNNING
+
+READY:
+PID=1  Arr=0  Burst=5  Rem=4  Prio=2  State=READY
+
+Time 7:
+
+RUNNING:
+PID=4  Arr=3  Burst=2  Rem=1  Prio=2  State=RUNNING
+
+READY:
+PID=1  Arr=0  Burst=5  Rem=4  Prio=2  State=READY
+
+Time 8:
+
+RUNNING:
+PID=1  Arr=0  Burst=5  Rem=4  Prio=2  State=RUNNING
+
+Time 9:
+
+RUNNING:
+PID=1  Arr=0  Burst=5  Rem=3  Prio=2  State=RUNNING
+
+Time 10:
+
+RUNNING:
+PID=1  Arr=0  Burst=5  Rem=2  Prio=2  State=RUNNING
+
+Time 11:
+
+RUNNING:
+PID=1  Arr=0  Burst=5  Rem=1  Prio=2  State=RUNNING
+
+
+========================================
+Performance Metrics
+========================================
+PID 1: Turnaround=12, Waiting=7, Response=0
+PID 2: Turnaround=3, Waiting=0, Response=0
+PID 3: Turnaround=3, Waiting=1, Response=1
+PID 4: Turnaround=5, Waiting=3, Response=3
+
+Average Turnaround Time: 5.75
+Average Waiting Time: 2.75
+Average Response Time: 1
+
+
+
+========================================
+Priority Scheduling (Non-Preemptive)
+========================================
+
+Time 0:
+
+RUNNING:
+PID=1  Arr=0  Burst=5  Rem=5  Prio=2  State=RUNNING
+
+Time 1:
+
+RUNNING:
+PID=1  Arr=0  Burst=5  Rem=4  Prio=2  State=RUNNING
+
+READY:
+PID=2  Arr=1  Burst=3  Rem=3  Prio=1  State=READY
+
+Time 2:
+
+RUNNING:
+PID=1  Arr=0  Burst=5  Rem=3  Prio=2  State=RUNNING
+
+READY:
+PID=2  Arr=1  Burst=3  Rem=3  Prio=1  State=READY
+
+Time 3:
+
+RUNNING:
+PID=1  Arr=0  Burst=5  Rem=2  Prio=2  State=RUNNING
+
+READY:
+PID=2  Arr=1  Burst=3  Rem=3  Prio=1  State=READY
+PID=3  Arr=3  Burst=2  Rem=2  Prio=2  State=READY
+PID=4  Arr=3  Burst=2  Rem=2  Prio=2  State=READY
+
+Time 4:
+
+RUNNING:
+PID=1  Arr=0  Burst=5  Rem=1  Prio=2  State=RUNNING
+
+READY:
+PID=2  Arr=1  Burst=3  Rem=3  Prio=1  State=READY
+PID=3  Arr=3  Burst=2  Rem=2  Prio=2  State=READY
+PID=4  Arr=3  Burst=2  Rem=2  Prio=2  State=READY
+
+Time 5:
+
+RUNNING:
+PID=2  Arr=1  Burst=3  Rem=3  Prio=1  State=RUNNING
+
+READY:
+PID=3  Arr=3  Burst=2  Rem=2  Prio=2  State=READY
+PID=4  Arr=3  Burst=2  Rem=2  Prio=2  State=READY
+
+Time 6:
+
+RUNNING:
+PID=2  Arr=1  Burst=3  Rem=2  Prio=1  State=RUNNING
+
+READY:
+PID=3  Arr=3  Burst=2  Rem=2  Prio=2  State=READY
+PID=4  Arr=3  Burst=2  Rem=2  Prio=2  State=READY
+
+Time 7:
+
+RUNNING:
+PID=2  Arr=1  Burst=3  Rem=1  Prio=1  State=RUNNING
+
+READY:
+PID=3  Arr=3  Burst=2  Rem=2  Prio=2  State=READY
+PID=4  Arr=3  Burst=2  Rem=2  Prio=2  State=READY
+
+Time 8:
+
+RUNNING:
+PID=3  Arr=3  Burst=2  Rem=2  Prio=2  State=RUNNING
+
+READY:
+PID=4  Arr=3  Burst=2  Rem=2  Prio=2  State=READY
+
+Time 9:
+
+RUNNING:
+PID=3  Arr=3  Burst=2  Rem=1  Prio=2  State=RUNNING
+
+READY:
+PID=4  Arr=3  Burst=2  Rem=2  Prio=2  State=READY
+
+Time 10:
+
+RUNNING:
+PID=4  Arr=3  Burst=2  Rem=2  Prio=2  State=RUNNING
+
+Time 11:
+
+RUNNING:
+PID=4  Arr=3  Burst=2  Rem=1  Prio=2  State=RUNNING
+
+
+========================================
+Performance Metrics
+========================================
+PID 1: Turnaround=5, Waiting=0, Response=0
+PID 2: Turnaround=7, Waiting=4, Response=4
+PID 3: Turnaround=7, Waiting=5, Response=5
+PID 4: Turnaround=9, Waiting=7, Response=7
+
+Average Turnaround Time: 7
+Average Waiting Time: 4
+Average Response Time: 4
+
+
+
+========================================
+Round Robin Scheduling (Quantum=2)
+========================================
+
+Time 0:
+
+RUNNING:
+PID=1  Arr=0  Burst=5  Rem=5  Prio=2  State=RUNNING
+
+Time 1:
+
+RUNNING:
+PID=1  Arr=0  Burst=5  Rem=4  Prio=2  State=RUNNING
+
+READY:
+PID=2  Arr=1  Burst=3  Rem=3  Prio=1  State=READY
+
+Time 2:
+
+RUNNING:
+PID=2  Arr=1  Burst=3  Rem=3  Prio=1  State=RUNNING
+
+READY:
+PID=1  Arr=0  Burst=5  Rem=3  Prio=2  State=READY
+
+Time 3:
+
+RUNNING:
+PID=2  Arr=1  Burst=3  Rem=2  Prio=1  State=RUNNING
+
+READY:
+PID=1  Arr=0  Burst=5  Rem=3  Prio=2  State=READY
+PID=3  Arr=3  Burst=2  Rem=2  Prio=2  State=READY
+PID=4  Arr=3  Burst=2  Rem=2  Prio=2  State=READY
+
+Time 4:
+
+RUNNING:
+PID=1  Arr=0  Burst=5  Rem=3  Prio=2  State=RUNNING
+
+READY:
+PID=3  Arr=3  Burst=2  Rem=2  Prio=2  State=READY
+PID=4  Arr=3  Burst=2  Rem=2  Prio=2  State=READY
+PID=2  Arr=1  Burst=3  Rem=1  Prio=1  State=READY
+
+Time 5:
+
+RUNNING:
+PID=1  Arr=0  Burst=5  Rem=2  Prio=2  State=RUNNING
+
+READY:
+PID=3  Arr=3  Burst=2  Rem=2  Prio=2  State=READY
+PID=4  Arr=3  Burst=2  Rem=2  Prio=2  State=READY
+PID=2  Arr=1  Burst=3  Rem=1  Prio=1  State=READY
+
+Time 6:
+
+RUNNING:
+PID=3  Arr=3  Burst=2  Rem=2  Prio=2  State=RUNNING
+
+READY:
+PID=4  Arr=3  Burst=2  Rem=2  Prio=2  State=READY
+PID=2  Arr=1  Burst=3  Rem=1  Prio=1  State=READY
+PID=1  Arr=0  Burst=5  Rem=1  Prio=2  State=READY
+
+Time 7:
+
+RUNNING:
+PID=3  Arr=3  Burst=2  Rem=1  Prio=2  State=RUNNING
+
+READY:
+PID=4  Arr=3  Burst=2  Rem=2  Prio=2  State=READY
+PID=2  Arr=1  Burst=3  Rem=1  Prio=1  State=READY
+PID=1  Arr=0  Burst=5  Rem=1  Prio=2  State=READY
+
+Time 8:
+
+RUNNING:
+PID=4  Arr=3  Burst=2  Rem=2  Prio=2  State=RUNNING
+
+READY:
+PID=2  Arr=1  Burst=3  Rem=1  Prio=1  State=READY
+PID=1  Arr=0  Burst=5  Rem=1  Prio=2  State=READY
+
+Time 9:
+
+RUNNING:
+PID=4  Arr=3  Burst=2  Rem=1  Prio=2  State=RUNNING
+
+READY:
+PID=2  Arr=1  Burst=3  Rem=1  Prio=1  State=READY
+PID=1  Arr=0  Burst=5  Rem=1  Prio=2  State=READY
+
+Time 10:
+
+RUNNING:
+PID=2  Arr=1  Burst=3  Rem=1  Prio=1  State=RUNNING
+
+READY:
+PID=1  Arr=0  Burst=5  Rem=1  Prio=2  State=READY
+
+Time 11:
+
+RUNNING:
+PID=1  Arr=0  Burst=5  Rem=1  Prio=2  State=RUNNING
+
+
+========================================
+Performance Metrics
+========================================
+PID 1: Turnaround=12, Waiting=7, Response=0
+PID 2: Turnaround=10, Waiting=7, Response=1
+PID 3: Turnaround=5, Waiting=3, Response=3
+PID 4: Turnaround=7, Waiting=5, Response=5
+
+Average Turnaround Time: 8.5
+Average Waiting Time: 5.5
+Average Response Time: 2.25
+
