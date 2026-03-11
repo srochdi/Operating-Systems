@@ -4,7 +4,7 @@
 This project implements a CPU scheduling simulator that models four classic scheduling algorithms: FCFS, SRTF, Priority, and Round Robin.
 
 ## Repository URL
-[Your GitHub/GitLab repository URL here]
+git@github.com:srochdi/Operating-Systems.git
 
 ## Project Structure
 ```
