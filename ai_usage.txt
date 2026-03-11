@@ -1,0 +1,51 @@
+AI USAGE STATEMENT
+==================
+
+Student Name: Samira Rochdi
+Course: CSC 4210 - Operating Systems
+Project: CPU Scheduling Simulator
+
+AI TOOLS USED
+-------------
+Yes, AI tools were used in the development of this project.
+
+Tool: Google Gemini
+
+HOW AI WAS USED
+---------------
+AI assistance was utilized for the following purposes:
+
+1. UNDERSTANDING CONCEPTS
+   - Clarifying differences between preemptive and non-preemptive scheduling
+   - Explaining how event-based vs time-based preemption works
+   - Understanding PCB state transitions
+   - Learning about discrete-time simulation approaches
+
+2. VERIFICATION AND TESTING
+   - Verifying manual calculations for Part A
+   - Checking Gantt chart correctness
+   - Validating performance metrics (Turnaround, Waiting, Response times)
+   - Identifying preemption events in SRTF and Round Robin
+
+3. DOCUMENTATION
+   - Assistance with README formatting and organization
+   - Help structuring project documentation
+   - Guidance on submission requirements
+
+WHAT I DID MYSELF
+------------------
+- Implemented all scheduling algorithms (FCFS, SRTF, Priority, Round Robin)
+- Wrote all source code for the CPU scheduler
+- Designed PCB structure and simulation logic
+- Hand-wrote the manual analysis solutions for Part A submission
+- Compiled, tested, and debugged the simulator
+- Ensured output format matches project specifications
+- Set up version control with progressive commits
+
+UNDERSTANDING
+-------------
+I fully understand how each scheduling algorithm works and can explain:
+- The difference between FCFS, SRTF, Priority, and Round Robin scheduling
+- How preemption occurs in SRTF (event-based) vs Round Robin (time-based)
+- How to calculate Turnaround, Waiting, and Response times
+- The discrete-time simulation approach
